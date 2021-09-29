@@ -1,58 +1,19 @@
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-
-const useStyles = makeStyles({
-  table: {
-    minWidth: 650,
-  },
-});
-
-function createData(id: number, provider: string, status: string) {
-  return { id, provider, status };
-}
-
-const rows = [
-  createData(1, "Provider 1", "Active"),
-  createData(2, "Provider 2", "Inactive"),
-  createData(3, "Provider 3", "Active"),
-];
+import TableProviders from "../components/HomePageWrapper";
+import PageHeader from "../components/PageHeader";
 
 export default function Home() {
-  const classes = useStyles();
-
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} size="small" aria-label="a dense table">
-        <TableHead>
-          <TableRow>
-            <TableCell align="left">Id</TableCell>
-            <TableCell align="center">Fornecedor</TableCell>
-            <TableCell align="center">Status</TableCell>
-            <TableCell align="center">Opções</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow key={row.id}>
-              <TableCell align="left" component="th" scope="row">
-                {row.id}
-              </TableCell>
-              <TableCell align="center">{row.provider}</TableCell>
-              <TableCell align="center">{row.status}</TableCell>
-              <TableCell align="center">
-                <div>opções</div>
-              </TableCell>
-            </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    <>
+      <PageHeader />
+      <div>
+        <Button>Filtrar</Button>
+        <TextField variant="outlined" defaultValue="Digite o fornecedor" />
+        <Button>Adicionar...</Button>
+      </div>
+      <TableProviders />
+    </>
   );
 }

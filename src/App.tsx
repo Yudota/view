@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Details from "./pages/Details";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 
@@ -10,10 +11,13 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/home">
+          <Route path="/:id/details">
+            <Details />
+          </Route>
+          <Route exact path="/home">
             <Home />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Login />
           </Route>
         </Switch>

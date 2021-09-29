@@ -5,7 +5,7 @@ import Button from "@material-ui/core/Button";
 
 import * as s from "./styles";
 
-export default function HeaderHomePage() {
+export default function PageHeader() {
   return (
     <>
       <AppBar position="static">
