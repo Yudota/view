@@ -11,7 +11,7 @@ export default function Home() {
       <div>
         <Button>Filtrar</Button>
         <TextField variant="outlined" defaultValue="Digite o fornecedor" />
-        <Button>Adicionar...</Button>
+        <Button>Adicionar Fornecedor</Button>
       </div>
       <TableProviders />
     </>
