@@ -8,12 +8,7 @@ export default function Home() {
   return (
     <>
       <PageHeader />
-      <div>
-        <Button>Filtrar</Button>
-        <TextField variant="outlined" defaultValue="Digite o fornecedor" />
-        <Button href="/add-provider">Adicionar Fornecedor</Button>
-      </div>
-      <TableProviders />
+      <div>Adicionar Fornecedor</div>
     </>
   );
 }

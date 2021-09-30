@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AddProvider from "./pages/AddProvider";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -16,6 +17,9 @@ export default function App() {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route exact path="/add-provider">
+            <AddProvider />
           </Route>
           <Route exact path="/">
             <Login />

@@ -10,9 +10,14 @@ export default function Details() {
     <>
       <h2>Detalhes {state.id}</h2>
       <h3>Informações sobre o Fornecedor {state.id}</h3>
-      <Button>Adicionar Produto</Button>
-      <Button>Adicionar Serviço</Button>
-      <Button>Salvar Alterações</Button>
+      <Button variant="contained">Adicionar Produto</Button>
+      <Button variant="contained">Adicionar Serviço</Button>
+      <Button variant="contained" color="secondary">
+        Excluir fornecedor
+      </Button>
+      <Button variant="contained" color="primary">
+        Salvar Alterações
+      </Button>
     </>
   );
 }

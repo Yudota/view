@@ -12,8 +12,8 @@ export default function BodyHomePage() {
         <TextField label="Email" type="email" variant="outlined" />
         <br />
         <TextField label="Senha" type="password" variant="outlined" />
-        <Button style={{ marginTop: "16px" }}>
-          <a href="/home">Login</a>
+        <Button style={{ marginTop: "16px" }} href="/home">
+          Login
         </Button>
         <p>
           <a href="/">Esqueceu a senha?</a>
