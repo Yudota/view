@@ -10,7 +10,7 @@ export default function Home() {
       <PageHeader />
       <div>
         <Button>Filtrar</Button>
-        <TextField variant="outlined" defaultValue="Digite o fornecedor" />
+        <TextField variant="outlined" label="Digite o fornecedor" />
         <Button href="/add-provider">Adicionar Fornecedor</Button>
       </div>
       <TableProviders />

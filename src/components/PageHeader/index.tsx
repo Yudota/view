@@ -13,7 +13,6 @@ export default function PageHeader() {
           <div>Logo</div>
           <div>
             <Button color="inherit">Home</Button>
-            <Button color="inherit">Login</Button>
           </div>
         </s.StyledToolbar>
       </AppBar>
